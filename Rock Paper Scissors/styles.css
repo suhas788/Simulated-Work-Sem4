@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #131212;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin: 10px 0;
+  }
+  
+  .scoreboard {
+    margin: 20px 0;
+  }
+  
+  .choices button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .choices button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .choices button.selected {
+    transform: scale(1.1);
+    background-color: #d1f4d1;
+  }
+  
+  .selected {
+    animation: bounce 0.3s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  

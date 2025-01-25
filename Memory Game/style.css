@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.card {
+  position: relative;
+  width: 80px;
+  height: 100px;
+  transform: perspective(600px) rotateY(0);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card.flipped {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card.matched {
+  visibility: hidden;
+}
+
+.front-face, .back-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.front-face {
+  background-color: #f0f0f0;
+}
+
+.back-face {
+  transform: rotateY(180deg);
+}

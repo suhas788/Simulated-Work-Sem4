@@ -1,0 +1,41 @@
+.grid {
+	width: 300px;
+	height: 300px;
+	border: solid black 1px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.invader {
+	background-color: purple;
+	border-radius: 10px;
+}
+
+.shooter {
+	background-color: green;
+}
+
+.laser {
+	background-color: orange;
+}
+
+.boom {
+	background-color: red;
+}
+
+.boss {
+    background-color: purple; /* Example boss appearance */
+    width: 30px;
+    height: 30px;
+}
+
+.projectile {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
